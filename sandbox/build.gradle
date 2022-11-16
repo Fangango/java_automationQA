@@ -1,3 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'application'
-mainClassName = "HelloWorld"
+mainClassName = "ru.stqa.sandbox.HelloWorld"
+
+dependencies {
+    implementation 'org.jetbrains:annotations:20.1.0'
+}
