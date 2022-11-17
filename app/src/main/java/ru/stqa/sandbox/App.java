@@ -1,14 +1,17 @@
 package ru.stqa.sandbox;
 
-public class HelloWorld {
+public class App {
 	
 	public static void main(String[] args) {
 		
-		Point p1 = new Point(2,5);
-		Point p2 = new Point(7, 10);
+		Point p1 = new Point(2,2);
+		Point p2 = new Point(4, 4);
+		Square s = new Square(5);
+		Rectangle r = new Rectangle(5, 5);
 
-		double distance = Point.distance(p1, p2);
-		System.out.println(distance);
+		System.out.println(Point.distance(p1, p2));
+		System.out.println(s.area());
+		System.out.println(r.area());
 	}
 
 	//public static double distance(Point point1, Point point2) {
